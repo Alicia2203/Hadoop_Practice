@@ -16,7 +16,7 @@ Dataset can be downloaded from AWS S3 Bucket with the following command
 - **Results**
   - `python_conven_wc.txt`   
 
-#### B. Conventional Method with Python
+#### B. MapReduce with Python (HDFS)
 - **Script**
   - `mapper.py` - Mapper
   - `reducer.py`- Reducer 
