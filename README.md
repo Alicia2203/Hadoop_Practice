@@ -8,17 +8,19 @@ Dataset can be downloaded from AWS S3 Bucket with the following command
 
 ### Codes
 #### A. Conventional Method with Python
-- Script
+- **Script**
   - `mapper.py` - Mapper
   - `reducer.py`- Reducer  
-- Code Execution Command
+- **Code Execution Command**
   - `$ time cat bookCorpus_small/* | ./mapper.py | sort | ./reducer.py > python_conven_wc.txt`
+- **Results**
+  - `python_conven_wc.txt`   
 
 #### B. Conventional Method with Python
-- Script
+- **Script**
   - `mapper.py` - Mapper
   - `reducer.py`- Reducer 
-- Code Execution Command
+- **Code Execution Command**
 ```
 $ time hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming*.jar 
       -input bookCorpus_small -output python_mr_wc 
@@ -28,15 +30,18 @@ $ time hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming*.jar
       -reducer /home/hadoop/assignment/python/reducer.py
 ```
 #### C. Spark on standalone in Masternode mode
-- Scirpt
+- **Scirpt**
   - `spark_wc_local.py` - Mapper & Reducer
-- Code Execution Command
+- **Code Execution Command**
   - `$ time spark-submit spark_wc_local.py`
+- **Results**
+  - `spark_wc_local.txt`
 
 #### D. Spark on standalone in Cluster mode
-- Scirpt   
+- **Scirpt**   
   - `spark_wc_cluster.py` - Mapper & Reducer
-- Code Execution Command
+- **Code Execution Command**
   - `$ time spark-submit spark_wc_cluster.py`
- 
+- **Results**
+  - `spark_wc_cluster.txt`
   
