@@ -1,7 +1,3 @@
-# Big Data Analytics in the cloud Assignment
-Student Name: Alicia Chong Tsui Ying  
-Student ID: 20074290
-
 ### Dataset
 Dataset can be downloaded from AWS S3 Bucket with the following command 
 - `wget https://alicia-aws-bucket.s3.amazonaws.com/BookCorpus_small.zip`
